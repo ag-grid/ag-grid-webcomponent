@@ -1,0 +1,25 @@
+{
+  "name": "ag-grid-webcomponent",
+  "version": "0.0.1-beta.0",
+  "description": "ag-Grid Web Component",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceolter/ag-grid-webcomponent.git"
+  },
+  "keywords": [
+    "aggrid",
+    "grid",
+    "webcomponent",
+    "web",
+    "component"
+  ],
+  "author": "Sean Landsman <sean@thelandsmans.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ceolter/ag-grid-webcomponent/issues"
+  },
+  "homepage": "https://github.com/ceolter/ag-grid-webcomponent#readme"
+}
