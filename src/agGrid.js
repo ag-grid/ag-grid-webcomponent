@@ -33,13 +33,13 @@ class AgGrid extends HTMLElement {
     }
 
     set gridOptions(options) {
+        let globalEventListener = this.globalEventListener.bind(this);
         this._gridOptions = agGrid.ComponentUtil.copyAttributesToGridOptions(options, this._attributes);
 
         // prevent instantiating multiple grids
         if (!this._initialised) {
             let gridParams = {
-                globalEventListener: () => {
-                }
+                globalEventListener: globalEventListener
             };
 
             this._agGrid = new agGrid.Grid(this, this._gridOptions, gridParams);
@@ -80,6 +80,24 @@ class AgGrid extends HTMLElement {
             agGrid.ComponentUtil.processOnChange(changeObject, this._gridOptions, this.api, this.columnApi);
         }
     };
+
+    globalEventListener(eventType, event) {
+        let eventLowerCase = eventType.toLowerCase();
+        let browserEvent = new Event(eventLowerCase);
+
+        let browserEventNoType = browserEvent;
+        browserEventNoType.agGridDetails = event;
+
+        // for when defining events via myGrid.addEventListener('columnresized', function (event) {...
+        this.dispatchEvent(browserEvent);
+
+        // for when defining events via myGrid.oncolumnresized = function (event) {....
+        let callbackMethod = 'on' + eventLowerCase;
+        if (typeof this[callbackMethod] === 'function') {
+            this[callbackMethod](browserEvent);
+        }
+    };
+
 }
 
 if (typeof document === 'undefined' || !document.registerElement) {
