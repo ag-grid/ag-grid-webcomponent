@@ -20,7 +20,7 @@ See the [www.ag-grid.com](http://www.ag-grid.com) for an overview and full docum
     
     <link rel="import" href="ag-grid.html">
     
-    <script src="https://rawgit.com/ceolter/ag-grid-webcomponent-example/master/examples/simple-grid/simple-grid-example.js"></script>
+    <script src="docs/simple-grid.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
