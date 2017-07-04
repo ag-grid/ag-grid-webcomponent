@@ -6,8 +6,28 @@ This project contains the ag-Grid Web Component
 
 See the [www.ag-grid.com](http://www.ag-grid.com) for an overview and full documentation.
 
+## Demo
+
 [Simple Grid - Live Demo ↗](https://www.ag-grid.com/best-web-component-data-grid/examples/simple-grid/simple-grid-example.html)
 [Rich Grid - Live Demo ↗](https://www.ag-grid.com/best-web-component-data-grid/examples/simple-grid/rich-grid-example.html)
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.0.0/custom-elements.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/11.0.0/ag-grid.min.js"></script>
+    
+    <link rel="import" href="ag-grid.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<other-element></other-element>
+<ag-grid></ag-grid>
+```
 
 ## Installation 
 
@@ -62,23 +82,3 @@ Examples included are:
 ![Simple Grid](https://github.com/ceolter/ag-grid-webcomponent-example/blob/master/docs/simple.png?raw=true "Rich Grid")
 ## Rich Grid 
 ![Rich Grid](https://github.com/ceolter/ag-grid-webcomponent-example/blob/master/docs/rich.png?raw=true "Rich Grid")
-
-## Demo
-
-<!--
-```
-<custom-element-demo>
-  <template>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.0.0/custom-elements.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/11.0.0/ag-grid.min.js"></script>
-    
-    <link rel="import" href="ag-grid.html">
-    <next-code-block></next-code-block>
-  </template>
-</custom-element-demo>
-```
--->
-```html
-<other-element></other-element>
-<ag-grid></ag-grid>
-```
