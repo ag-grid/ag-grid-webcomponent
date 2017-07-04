@@ -15,8 +15,8 @@ See the [www.ag-grid.com](http://www.ag-grid.com) for an overview and full docum
 ```
 <custom-element-demo>
   <template>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.0.0/custom-elements.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/11.0.0/ag-grid.min.js"></script>
+    <script src="docs/custom-elements.min.js"></script>
+    <script src="docs/ag-grid.11.min.js"></script>
     <script src="docs/simple-grid.js"></script>
     
     <link rel="import" href="ag-grid.html">
