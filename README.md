@@ -27,7 +27,6 @@ See the [www.ag-grid.com](http://www.ag-grid.com) for an overview and full docum
 ```
 -->
 ```html
-<other-element></other-element>
 <ag-grid id="myGrid"
          style="height: 140px; width: 350px; display: block;"
          class="ag-fresh">
