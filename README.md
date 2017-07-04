@@ -17,10 +17,10 @@ See the [www.ag-grid.com](http://www.ag-grid.com) for an overview and full docum
   <template>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.0.0/custom-elements.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/11.0.0/ag-grid.min.js"></script>
+    <script src="docs/simple-grid.js"></script>
     
     <link rel="import" href="ag-grid.html">
     
-    <script src="docs/simple-grid.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
