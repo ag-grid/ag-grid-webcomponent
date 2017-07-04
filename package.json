@@ -1,6 +1,6 @@
 {
   "name": "ag-grid-webcomponent",
-  "version": "1.0.0",
+  "version": "11.0.0",
   "description": "ag-Grid Web Component",
   "main": "index.js",
   "scripts": {
