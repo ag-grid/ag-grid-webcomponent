@@ -2,7 +2,7 @@ function hypenateAndLowercase(property) {
     return property.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 }
 
-class AgGrid extends HTMLElement {
+export default class AgGrid extends HTMLElement {
     constructor() {
         super();
 
