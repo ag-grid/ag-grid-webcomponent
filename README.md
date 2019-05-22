@@ -9,7 +9,7 @@ See the [www.ag-grid.com](http://www.ag-grid.com) for an overview and full docum
 ## Demo
 
 [Simple Grid - Live Demo ↗](https://www.ag-grid.com/best-web-component-data-grid/examples/simple-grid/simple-grid-example.html)
-[Rich Grid - Live Demo ↗](https://www.ag-grid.com/best-web-component-data-grid/examples/simple-grid/rich-grid-example.html)
+[Rich Grid - Live Demo ↗](https://www.ag-grid.com/best-web-component-data-grid/examples/rich-grid/rich-grid-example.html)
 
 <!--
 ```
