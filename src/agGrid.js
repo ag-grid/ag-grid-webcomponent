@@ -52,6 +52,9 @@ export default class AgGrid extends HTMLElement {
     };
 
     static get observedAttributes() {
+      if(typeof agGrid === 'undefined'){
+             return [];
+         }
         // allow properties to be supplied either lowercased or hyphenated
         // this allows the user to either supply (for example) enableSorting or enabled-sorting
 
