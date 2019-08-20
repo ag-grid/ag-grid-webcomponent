@@ -52,11 +52,13 @@ class AgGrid extends HTMLElement {
     };
 
     static get observedAttributes() {
+      if(typeof agGrid === 'undefined'){
+             return [];
+         }
         // allow properties to be supplied either lowercased or hyphenated
         // this allows the user to either supply (for example) enableSorting or enabled-sorting
 
         // properties lowercased
-        if(typeof agGrid !== 'undefined'){
         let lowerCasedPropertyNames = agGrid.ComponentUtil.ALL_PROPERTIES
             .filter((property) => property !== 'gridOptions')
             .map((property) => property.toLowerCase());
@@ -65,7 +67,6 @@ class AgGrid extends HTMLElement {
             .filter((property) => property !== 'gridOptions')
             .map((property) => hypenateAndLowercase(property));
         return lowerCasedPropertyNames.concat(hyphenatedPropertyNames);
-      }
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
